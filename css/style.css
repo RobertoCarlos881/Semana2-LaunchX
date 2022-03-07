@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: #11e7f7;
+  padding: 0 30px;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -50px inset, rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    background: url(../img/choco-cake_0.5x.webp) no-repeat center;
+    background-size: cover;
+}
+
+.navLinks {
+    flex-grow: 8;
+  }
+  
+  .navLinks ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .navLinks li:last-child {
+    margin-left: auto;
+  }
+  
+  .navLinks li {
+    margin: 15px 30px;
+    padding: 20px 35px;
+    background: #f3fffd;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  
+  
+  .navLinks li:hover {
+    background: #e5e5e5;
+  }
+  
+  .navLinks li a {
+    text-decoration: none;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #11e7f7;
+  }
+
+.logo {
+    margin: 40px 0 0;
+    width: 30%;
+    min-width: 130px;
+    max-width: 300px;
+}
+
+.hero--title-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    text-align: center;
+    align-self: center;
+}
+.hero--title-container h1 {
+    width: 90%;
+    margin: 38px auto 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: white;
+}
+.hero--title-container p {
+    width: 90%;
+    margin: 38px auto 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
+  font-size: calc(10px + 4.5vw);
+  color: aliceblue;
+  font-family: "MV Boli", sans-serif;
+}
+
+.background {
+  background-color: #f7cb7b;
+  padding-bottom: 1px;
+}
+
+.card {
+  margin: 0 20px;
+  padding: 10px;
+  background-color: rgba(212, 231, 255, 0.78);
+  border-radius: 10px;
+}
+
+.card h2 {
+  font-family: "MV Boli", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.cakeContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cake {
+  background: rgb(94,0,112);
+  background: linear-gradient(180deg, rgba(94,0,112,1) 0%, rgba(99,9,121,0.7483368347338936) 50%, rgba(0,95,255,1) 100%);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  max-width: 256px;
+}
+
+.cake:nth-of-type(odd) {
+  background: rgb(255,122,203);
+  background: linear-gradient(180deg, rgba(255,122,203,1) 0%, rgba(240,57,119,0.7483368347338936) 50%, rgba(60,227,255,0.8435749299719888) 100%);
+}
+
+.cake img {
+  width: 100%;
+  border-radius: 5px;
+  border: dashed 1px #000;
+}
+
+.cake h3 {
+  text-align: center;
+}
+
+.cake p {
+  text-align: justify;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cake .price {
+  padding: 5px;
+  text-align: center;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button {
+  display: block;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 50vw;
+  margin-inline: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: #313131;
+  padding: 15px 0;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+
+.pedido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.pedido div {
+  margin: 10px 3px;
+  flex-grow: 12;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pedido input {
+  margin: 10px 0;
+  height: 24px;
+  font-size: 18px;
+}
+
+.pedido input[type="text"]{
+  border-radius: 10px;
+}
+.pedido input[type="email"]{
+  border-radius: 10px;
+}
+.pedido input[type="tel"]{
+  border-radius: 10px;
+}
+
+button[type="submit"] {
+  padding: 15px;
+  font-size: 1.5em;
+  border-radius: 5px;
+  background: greenyellow;
+  border-color: greenyellow;
+}
+
+button[type="submit"]:hover {
+  background: green;
+  border-color: green;
+  color: #e5e5e5;
+  cursor: pointer;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  padding: 5px;
+  background-color: #ffc8a6;
+}
+
+tbody tr:nth-of-type(odd) td {
+  background-color: #ffb58a;
+}
+
+thead tr td {
+  background-color: #ffd431;
+}
+
+#contact {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Agency FB", sans-serif;
+  font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 733px) {
+  .navLinks li {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0 15px 35px;
+  }
+  .navLinks li:last-child {
+    margin: 15px 0 15px 35px;
+  }
+
+  .navLinks ul {
+    justify-content: center;
+  }
+  #banner{
+    height: 200px;
+    background-position: center;
+  }
+}
