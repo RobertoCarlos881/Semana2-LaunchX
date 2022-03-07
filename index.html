@@ -8,6 +8,7 @@
   <meta name="description" content="Venta de pasteles skycake en la misión SpaceX">
   <link rel="icon" href="./img/favicon.png" type="image/png" sizes="any">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/pago.css">
 </head>
 <body>
   <header>
@@ -21,9 +22,6 @@
           </li>
           <li>
             <a href="#ourFlavour">Menú</a>
-          </li>
-          <li>
-            <a href="./orden.html">Pedido</a>
           </li>
           <li>
             <a href="./pastelero.html">Pastelero</a>
@@ -108,8 +106,113 @@
         <p>Teléfono: 55-3924-8175</p>
         <p>Horarios de atención:</p>
         <p>De 9am a 8pm</p>
-      </section>
+      </section><br>
+
+      <section id="purchase" class="purchase-form-container">
+        <h2>Ordenar</h2>
+        <form action="" class="purchase-form">
+          <hr>  
+            <div>
+                <label for="name">Nombre y Apellido</label><br>
+                <input type="text" class="input-box" placeholder="Pedro Perez" required><br>
+            </div>
+         
+            <div>
+                <label for="phone">Número de teléfono</label><br>
+                <input type="tel" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+            </div>
+          
+            <div>
+                <label for="mail">Correo electrónico</label><br>
+                <input type="email" id="email" name="email" placeholder="pedro@mail.com"><br>
+            </div>
+  
+            <div>
+                <label for="sabor1">Elija el sabor del bizcocho</label><br>
+                <input list="sabor" required>
+                <datalist id="sabor" name="sabor1">
+                    <option value="Vainilla">Vainilla</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Marmoleado">(Vainilla/Chocolate</option>
+                    <option value="Red Velvet">Red Velvet</option>
+                    <option value="Limón">Limón</option>
+                    <option value="Zanahoria">Zanahoria</option>
+                    <option value="Fresa">Fresa</option>
+                    <option value="Café">Café</option>
+                    <option value="Naranja">Naranja</option>
+                </datalist><br>
+            </div>
+
+            <div>
+                <label for="sabor2">Combinar con otro sabor</label><br>
+                <input list="sabor2" placeholder="Opcional">
+                <datalist id="sabor2" name="sabor2">
+                    <option value="Vainilla">Vainilla</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Marmoleado">(Vainilla/Chocolate)</option>
+                    <option value="Red Velvet">Red Velvet</option>
+                    <option value="Limón">Limón</option>
+                    <option value="Zanahoria">Zanahoria</option>
+                    <option value="Fresa">Fresa</option>
+                    <option value="Café">Café</option>
+                    <option value="Naranja">Naranja</option>
+                </datalist><br>
+            </div>
+
+            <div>
+                <label for="deco1">Elija la decoración de su pastel</label><br>
+                <input list="deco1" required>
+                <datalist id="deco1" name="deco1">
+                    <option value="Arequipe">Arequipe</option>
+                    <option value="Trufas">Trufas</option>
+                    <option value="Melocotón">Melocotón</option>
+                    <option value="Fresas">Fresas</option>
+                    <option value="Kiwi">Kiwi</option>
+                    <option value="Almendras">Almendras</option>
+                    <option value="Fresas">Fresas</option>
+                    <option value="Cerezas">Cerezas</option>
+                    <option value="Butter Cream">Butter Cream</option>
+                </datalist><br>
+            </div>
+ 
+            <div>
+                <label for="deco2">Elija otra decoración para su pastel</label><br>
+                <input list="deco2" placeholder="Opcional">
+                <datalist id="deco2" name="deco2">
+                    <option value="Arequipe">Arequipe</option>
+                    <option value="Trufas">Trufas</option>
+                    <option value="Melocotón">Melocotón</option>
+                    <option value="Fresas">Fresas</option>
+                    <option value="Kiwi">Kiwi</option>
+                    <option value="Almendras">Almendras</option>
+                    <option value="Fresas">Fresas</option>
+                    <option value="Cerezas">Cerezas</option>
+                    <option value="Butter Cream">Butter Cream</option>
+                </datalist><br>
+            </div>
+           
+            <div>
+                <label for="delivery">Elija la fecha que quiere recibir la entrega</label><br>
+                <input type="datetime-local" name="delivery-time" required>
+            </div>
+  
+ 
+            <div>
+                <label for="comentario" >¿Deseas agregar una dedicatoria?</label><br>
+                <input type="text" id="comentario" name="comentario" placeholder="Feliz Cumpleaños">
+            </div>
+  
+        </form>
+    
+        <div class="buttton-container">
+            <button href="html/credit-form-page.html" class="form-button credit-button" target="_blank">Pagar con Tarjeta<span class="form-button-icon credit-icon"></span></button>
+            <button href="html/paypal-form-page.html" class="paypal-button form-button">Pagar con PayPal<span class="form-button-icon paypal-icon" target="_blank"></span></button>
+        </div>
     </section>
+
+    </section>
+
+    
   </main>
 
   <footer>
